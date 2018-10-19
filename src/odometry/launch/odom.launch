@@ -1,0 +1,10 @@
+<launch>
+
+ <node pkg="odometry" type="odom" name="odom" output="screen">
+    <param name="x" value="0.0" />   <!--meters-->
+    <param name="y" value="0.0" />   <!--meters-->
+    <param name="yaw" value="0.0" /> <!--degrees-->
+
+ </node>
+
+</launch>

@@ -1,0 +1,10 @@
+<launch>
+	<node name="uvc_camera" pkg="uvc_camera" type="uvc_camera_node" args="$(find uvc_camera)/src/uvc_camera_node">
+	</node>
+	<node name="red_detect" pkg="colour_suss" type="colour_suss" args="$(find colour_suss)/src/colour_suss">
+	</node>
+	<node name="green_detect" pkg="colour_suss" type="colour_detect" args="$(find colour_suss)/src/colour_detect">
+	</node>
+</launch>
+
+

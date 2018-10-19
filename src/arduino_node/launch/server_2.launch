@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="rosserial_server" type="serial_node" name="serial_node_2">
+    <param name="port" value="/dev/ttyUSB2"/>
+    <param name="baud" value="115200"/>
+  </node>
+</launch>

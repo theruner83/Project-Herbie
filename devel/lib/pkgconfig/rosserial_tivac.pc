@@ -1,0 +1,8 @@
+prefix=/home/fypbois/FYP_ws/devel
+
+Name: rosserial_tivac
+Description: Description of rosserial_tivac
+Version: 0.7.7
+Cflags: 
+Libs: -L/home/fypbois/FYP_ws/devel/lib 
+Requires: 

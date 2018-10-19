@@ -1,0 +1,20 @@
+<launch>
+
+   <node pkg="rplidar_ros" type="rplidarNode" name="rplidar" output="screen">
+   <param name="serial_port"         type="string" value="/dev/ttyUSB0"/>  
+   <param name="serial_baudrate"     type="int"    value="115200"/>
+   <param name="frame_id"            type="string" value="base_laser"/>
+   <param name="inverted"            type="bool"   value="false"/>
+   <param name="angle_compensate"    type="bool"   value="true"/>
+
+   </node>
+   <node pkg="odometry" type="odom" name="odom" output="screen">
+    <param name="x" value="0" />   <!--meters-->
+    <param name="y" value="0" />   <!--meters-->
+    <param name="yaw_initial" value="0" /> <!--degrees-->
+   </node>
+   
+
+   <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0.15 0 0 0 1 base_link base_laser 100" />
+ 
+</launch>

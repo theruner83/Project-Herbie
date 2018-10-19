@@ -1,0 +1,25 @@
+
+footprint: [[-0.25, -0.1], [0.25, -0.1], [0.25, 0.1], [-0.25 , 0.1]]
+#robot_radius: ir_of_robot
+
+transform_torlerance: 0.2
+map_type: costmap
+
+obstacle_layer:
+ enabled: true
+ obstacle_range: 2.5
+ raytrace_range: 3.0
+ inflation_radius: 0.2
+ track_unkown_space: false
+ combination_method: 1
+
+ observation_sources: laser_scan_sensor 
+ laser_scan_sensor: {sensor_frame: base_laser, data_type: LaserScan, topic: /scan, marking: true, clearing: true}
+
+inflation_layer:
+ enabled: true
+ cost_scalaing_factor: 10.0
+ inflation_radius: 0.3
+static_layer:
+ enabled: true
+ map_topic: "/map"

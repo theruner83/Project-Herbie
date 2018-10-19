@@ -1,0 +1,8 @@
+prefix=/home/fypbois/FYP_ws/devel
+
+Name: tf_setup
+Description: Description of tf_setup
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/fypbois/FYP_ws/devel/lib 
+Requires: 

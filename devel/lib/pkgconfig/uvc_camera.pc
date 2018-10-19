@@ -1,0 +1,8 @@
+prefix=/home/fypbois/FYP_ws/devel
+
+Name: uvc_camera
+Description: Description of uvc_camera
+Version: 0.2.7
+Cflags: 
+Libs: -L/home/fypbois/FYP_ws/devel/lib -lnodelet_uvc_camera
+Requires: roscpp nodelet sensor_msgs
